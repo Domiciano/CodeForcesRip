@@ -28,12 +28,13 @@ public class Main {
             doc.getElementById("footer").remove();
             doc.getElementsByClass("second-level-menu").remove();
             doc.getElementsByClass("menu-box").remove();
+            doc.getElementsByClass("alert").remove();
 
             fos.write(doc.outerHtml().getBytes(StandardCharsets.UTF_8));
             fos.close();
             //
 
-
+            ABC++;
         }
     }
 
